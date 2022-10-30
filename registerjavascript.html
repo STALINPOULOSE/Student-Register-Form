@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT DETAILS</title>
+    <script>
+
+
+  function validate()
+    {
+    var name=document.getElementById("student_name").value;
+    var address=document.getElementById("student_address").value;
+    var pincode=document.getElementById("Pincode").value;
+    var city=document.getElementById("City").value;
+    var email=document.getElementById("Email").value;
+    var phone=document.getElementById("phone").value;
+    var gender=document.getElementById("Gender").value;
+    var birthday=document.getElementById("birthday").value;
+    var qualification=document.getElementById("qualification").value;
+    var college=document.getElementById("college").value;
+    var Certificates=document.getElementById("Certificates").value;
+   if(name=="" || address=="" || pincode=="" || city=="" ||  email=="" || phone=="" || gender=="" || birthday=="" ||qualification=="" || college=="" || Certificates=="")
+   {
+   window.alert("Please Enter The Details");
+   }
+   else
+   {
+   window.alert("Welcome To "+ name );
+   }
+   }
+
+
+    </script>
+
+</head>
+<body>
+<form name="registration" action="register.html" method="post">
+    <table border="1">
+        <tr>
+
+          <td col-span="2"><b>STUDENT DETAILS</b></td>
+
+
+        </tr>
+        <tr>
+            <td><b>Student-Name</b></td>
+            <td><input type="text" name="STUDENT-NAME" placeholder="enter your name" id="student_name"  /> </td>
+        </tr>
+         <tr>
+            <td><b>Address</b></td>
+            <td><textarea  rows="5"  cols="15" name="STUDENT-ADDRESS" placeholder="enter your address" id="student_address" ></textarea> </td>
+        </tr>
+         <tr>
+            <td><b>Pincode</b></td>
+            <td><input type="data" name="Pincode" placeholder="enter your pincode" id="Pincode"  /> </td>
+        </tr>
+        <tr>
+            <td><b>City</b></td>
+            <td><select name="City" id="City" />
+                <option value="select"  >Select</option>
+                <option value="Parassala">Parassala</option>
+                <option value="Trivandrum">Trivandrum</option>
+                <option value="Marthandam">Marthandam</option>
+                <option value="Nagercoil">Nagercoil</option>
+            </td>
+        </tr>
+         <tr>
+            <td><b>Email</b></td>
+            <td><input type="email" name="email" placeholder="enter your email"  id="Email" /> </td>
+        </tr>
+         <tr>
+            <td><b>Phone</b></td>
+            <td><input type="data" name="phone" placeholder="enter mobile number" id="phone" /> </td>
+        </tr>
+
+        <tr>
+            <td><b>Gender</b></td>
+            <td ><input type="radio" name="gender" placeholder="male" id="Gender"  /> Male
+            <input type="radio" name="gender" placeholder="female"  /> Female </td>
+        </tr>
+         <tr>
+            <td><b>Date of Birth</b></td>
+            <td><input type="date" name="birthday" placeholder="enter birthday" id="birthday"  />
+            </td>
+        </tr>
+          <tr>
+            <td><b>Qualification</b></td>
+            <td><input type="checkbox" name="qualification" placeholder="BE" id="qualification"  /> BE
+            <input type="checkbox" name="qualification" placeholder="ME"  /> ME
+            <input type="checkbox" name="qualification" placeholder="PHD"  /> PHD </td>
+        </tr>
+        <tr>
+            <td><b>College</b></td>
+            <td><select name="college" id="college" />
+                <option value="select">Select</option>
+                <option value="MARIA college">MARIA college</option>
+                <option value="MACET college">MACET college</option>
+                <option value="ST'XAVIOR college">ST'XAVIOR college</option>
+                <option value="BETHLAHEM college">BETHLAHEM college</option>
+            <</td>
+        </tr>
+        <tr>
+            <td><b>Certificates</b></td>
+            <td><input type="file" name="Certificates" id="Certificates" /> </td>
+
+        </tr>
+        <tr>
+<!--            <td><center><input type="button"  value="Reset" onclick="clear()"></center></td>-->
+            <td><center><input type="button"  value="Click to Submit" onclick="validate()"></center></td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
